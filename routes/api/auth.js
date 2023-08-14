@@ -2,7 +2,12 @@ const express = require("express");
 
 const { validateBody, authenticate } = require("../../middlewares");
 const { registerSchema, loginSchema } = require("../../schemas/users");
-const { register, login, getCurrent, logout } = require("../../controllers/users");
+const {
+  register,
+  login,
+  getCurrent,
+  logout,
+} = require("../../controllers/users");
 
 const router = express.Router();
 
