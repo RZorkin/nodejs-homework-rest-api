@@ -1,5 +1,6 @@
 const Joi = require("joi");
 
+
 const registerSchema = Joi.object({
   password: Joi.string().min(8).required(),
   email: Joi.string().required(),
