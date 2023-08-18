@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const {
-  listContacts,
-  getContactById,
-  addContact,
-  removeContact,
-  updateContact,
-  updateFavorite,
+	listContacts,
+	getContactById,
+	addContact,
+	removeContact,
+	updateContact,
+	updateFavorite,
 } = require("../../controllers/contacts");
 const { validateBody, isValidId, authenticate } = require("../../middlewares");
 const { addSchema, updateFavoriteSchema } = require("../../schemas/contacts");
