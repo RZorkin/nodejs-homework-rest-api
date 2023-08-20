@@ -15,13 +15,13 @@ const nodemailerConfig = {
 
 const transport = nodemailer.createTransport(nodemailerConfig);
 
-const sendMail = async data => {
+const sendEmail = async data => {
 	const mail = { ...data, from: META_EMAIL };
-	await transport.sendMail(mail);
+	await transport.sendEmail(mail);
 	return true;
 };
 
-module.exports = sendMail;
+module.exports = sendEmail;
 
 // const sgMail = require("@sendgrid/mail");
 // require("dotenv").config();
