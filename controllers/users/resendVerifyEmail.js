@@ -10,7 +10,7 @@ const resendVerifyEmail = async (req, res, next) => {
 		});
 	}
 
-	if (user.verify) {
+	if (!user.verify) {
 		res.status(400).json({
 			message: "Verification has already been passed",
 		});
