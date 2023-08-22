@@ -18,13 +18,13 @@ const nodemailerConfig = {
 
 const transport = nodemailer.createTransport(nodemailerConfig);
 
-const sendMail = async data => {
+const sendEmail = async data => {
 	const mail = { ...data, from: META_EMAIL };
 	await transport.sendMail(mail);
 	return true;
 };
 
-module.exports = sendMail;
+module.exports = sendEmail;
 
 // Тест надсилання листа
 // const config = {
@@ -43,7 +43,7 @@ module.exports = sendMail;
 // const transporter = nodemailer.createTransport(config);
 // const emailOptions = {
 // 	from: META_EMAIL,
-// 	to: "zorkin81@gmail.com",
+// 	to: "ruslan.zorkin@meta.ua",
 // 	subject: "Nodemailer test",
 // 	text: "Привіт. Ми тестуємо надсилання листів!",
 // };
