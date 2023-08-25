@@ -43,7 +43,7 @@ module.exports = sendEmail;
 // const transporter = nodemailer.createTransport(config);
 // const emailOptions = {
 // 	from: META_EMAIL,
-// 	to: "ruslan.zorkin@meta.ua",
+// 	to: "zorkin81@gmail.com",
 // 	subject: "Nodemailer test",
 // 	text: "Привіт. Ми тестуємо надсилання листів!",
 // };
